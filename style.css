@@ -5,7 +5,7 @@
 .hero{
         height: 100vh;
         width: 100%;
-        background: #fad8ec96;
+        background: var( --primary-color);
         font-family: sans-serif;
         position: relative;
     }
@@ -35,7 +35,6 @@
         color: #ff4321;
         border-left-style: none;
         border-top-style: none; 
-        transform: scale(.9) rotate(-15deg);
     }
     nav ul li{
         display: inline-block;
@@ -44,7 +43,7 @@
     }
     nav ul li a{
         text-decoration: none;
-        color:#f761a7e3 ;
+        color:var(--secondary-color) ;
         font-size: 18px;
         font-weight: 600;
         transition: .5s;
@@ -62,7 +61,7 @@
    }
    .info h1{
        font-size: 70px;
-       color: #212121;
+       color: var(--secondary-color);
        margin-bottom: 20px;
    }
    span{
@@ -70,28 +69,21 @@
    }
    
    .info p{
-       color:#606163;
+       color:var(--secondary-color);
        line-height: 29px;
-       
    }
-   .cv{
-       background: #212121;
+   .info a{
+       background: var(--secondary-color);
        padding: 10px 18px;
        text-decoration: none;
-       color: #fff;
        display: inline-block;
        margin: 30px 0;
        border-radius: 5px;
-       font-weight: 600;
-       transition: .5s;
+       color: var(--primary-color);
    }
-   .cv:hover{
-       color: #ff4321;
-       background: #ffffff;
-       font-family: cursive;
-       font-size: 20px;
-       transform: scale(1) rotate(16deg);
-   }
+  
+   
+   
    .img-box{
        width: 45%;
        height: 80%;
@@ -121,11 +113,28 @@
    }
    .social-links a{
        font-size: 30px;
-       color: #918b8a;
+       color: var(--secondary-color);
        margin-right: 20px;
    }
    .social-links a:hover{
-   
        color: #ff4321;
-       
+   }
+
+   /** DARK MOOD */
+   #icon{
+       width: 30px;
+       cursor: pointer;
+   }
+   nav ul{
+       flex: 1;
+       text-align: right;
+   }
+   :root{
+       --primary-color:#edf2fc;
+       --secondary-color:#212121;
+   }
+   .dark-theme{
+    --primary-color:#000106;
+    --secondary-color:#fff;
+    
    }
